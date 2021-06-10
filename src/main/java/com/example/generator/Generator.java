@@ -106,6 +106,7 @@ public class Generator {
                     //获取返回值类型
                     String [] typeList = item.getReturnType().getName().split("\\.");
 
+                    //获取字段的首字母大写名称,首字母小写名称以及类型
                     infoMode.addFiledInfo(methodName.substring(3),lowerFirstCase(methodName.substring(3)),typeList[typeList.length-1]);
                 }
             }

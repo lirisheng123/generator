@@ -12,10 +12,11 @@ public class InfoModel {
 
     private String name1;
     private String name2;
+    // 内部实体类集合
     List<FiledInfo> filedInfos = new ArrayList<>();
-    private List<String>  upFiledName = new ArrayList<>();
 
 
+    // 声明内部实体类 ,用来表示 字段的名称和类型
     public class FiledInfo{
        private String upFileName;
        private String doFileName;
@@ -55,6 +56,7 @@ public class InfoModel {
         }
     }
 
+    // 提供实例和添加内部对象的方法
     public void addFiledInfo(String upFiledName, String doFiledName, String filedType){
         FiledInfo filedInfo = new FiledInfo();
         filedInfo.setUpFileName(upFiledName);
